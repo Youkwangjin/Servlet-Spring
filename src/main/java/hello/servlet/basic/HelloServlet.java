@@ -15,8 +15,8 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("HelloServlet.service");
-        System.out.println("request = " + request);
-        System.out.println("response = " + response);
+        System.out.println("request = " + request); // request = org.apache.catalina.connector.RequestFacade@7accd431
+        System.out.println("response = " + response); // response = org.apache.catalina.connector.ResponseFacade@26fd794d
 
         String username = request.getParameter("username");
         System.out.println("username = " + username);
